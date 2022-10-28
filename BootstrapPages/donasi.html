@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Donasi - Jabar Sejahtera</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Bootstrap Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.12.1/datatables.min.css" />
+  <!-- My Own Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top shadow-sm bg-white">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/logos/Logo_Jabar_Sejahtera.png" alt="Logo Jabar Sejahtera" height="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link active" href="index.html">Beranda</a></li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="donasi.html">Donasi</a></li>
+            <li class="nav-item dropdown mt-2 mb-lg-0">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Layanan
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="hitungzakat.html">Hitung Zakat</a></li>
+                <li><a class="dropdown-item" href="laporan.html">Laporan Penyaluran Dana</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="events.html">Event</a></li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="tentangkami.html">Tentang Kami</a></li>
+          </ul>
+          <div>
+            <a href="login.html"><button class="btn btn-link text-dark text-decoration-none me-1">Masuk</button></a>
+            <a href="register.html"><button class="btn btn-primary">Daftar</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="text-center py-3">Donasi</h1>
+    <section class="row justify-content-center" id="pilihJenisDonasi">
+      <div class="col-7">
+        <div class="card border-0 shadow-app">
+          <img src="../assets/images/Donate-donasi.png" class="card-img-top" alt="...">
+          <div class="card-body p-0">
+            <div class="bg-orange text-white  p-2">
+              <h6 class="mb-0 text-center">Pilih Jenis Donasi</h6>
+            </div>
+            <div class="p-3">
+              <select class="form-select mb-3" name="jenisdonasi" id="jenisdonasi">
+                <option selected>Pilih Jenis Donasi...</option>
+                <option value="1">Zakat</option>
+                <option value="2">Donasi</option>
+              </select>
+              <select class="form-select mb-3" name="subjenisdonasi" id="subjenisdonasi">
+                <option selected>Pilih Jenis Zakat..</option>
+                <option value="1">Zakat Maal</option>
+                <option value="2">Zakat Penghasilan</option>
+              </select>
+              <div class="mb-3">
+                <label for="nominal" class="form-label"><strong>Masukkan Nominal:</strong></label>
+                <input type="text" class="form-control" name="nominal" id="nominal" placeholder="Rp.">
+              </div>
+              <div class="mb-1">
+                <label for="Nama" class="form-label"><strong>Lengkapi Data Diri Dibawah Ini:</strong></label>
+                <input type="text" class="form-control" name="nominal" id="nominal" placeholder="Masukkan nama anda...">
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="samarkan" id="samarkannama">
+                <label class="form-check-label" for="samarkannama">
+                  Samarkan Nama (Hamba Allah)
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shadow-apps mt-3 py-3 bg-white">
+    <div class="container-lg">
+      <div class="row justify-content-between align-items-start gap-5">
+        <div class="col-3">
+          <img class="img-fluid mb-3 img-footer" src="../assets/logos/Logo_Jabar_Sejahtera.png" alt="Logo Jabar Sejahtera" />
+          <p>Jabarsejahtera.org adalah website untuk berzakat dan menggalang dana secara online terpopuler di Indonesia.
+          </p>
+        </div>
+        <div class="col">
+          <h6>Hubungi Kami</h6>
+          <div class="d-flex flex-row align-items-center gap-2">
+            <i class="bi bi-whatsapp"></i>
+            <address class="m-0">08986866875</address>
+          </div>
+          <div class="d-flex flex-row align-items-center gap-2">
+            <i class="bi bi-instagram"></i>
+            <address class="m-0">@JabarSejahtera</address>
+          </div>
+          <div class="d-flex flex-row align-items-center gap-2">
+            <i class="bi bi-envelope-fill"></i>
+            <address class="m-0">jabarsejahtera@gmail.com</address>
+          </div>
+          <div class="d-flex flex-row gap-2">
+            <i class="bi bi-geo-alt-fill"></i>
+            <address class="m-0">
+              Jl. Gelap Nyawang No.4, Lb. Siliwangi, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132
+            </address>
+          </div>
+        </div>
+        <div class="col-3">
+          <img class="img-fluid" src="../Location.png" alt="Map Jabar Sejahtera">
+        </div>
+      </div>
+      <hr class="m-0">
+      <div class="d-flex justify-content-between align-items-center mt-2">
+        <small class="text-msecondary">Jabar Digital Services</small>
+        <small class="text-msecondary">Copyright &copy; 2022. All Right Reserved</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.12.1/datatables.min.js"></script>
+
+  <script src="./js_app.js"></script>
+</body>
+
+</html>

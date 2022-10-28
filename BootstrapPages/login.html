@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <!-- Bootstrap Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- My Own Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Login - Jabar Sejahtera</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top shadow-sm bg-white">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/logos/Logo_Jabar_Sejahtera.png" alt="Logo Jabar Sejahtera" height="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link active" href="index.html">Beranda</a></li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="donasi.html">Donasi</a></li>
+            <li class="nav-item dropdown mt-2 mb-lg-0">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Layanan
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="hitungzakat.html">Hitung Zakat</a></li>
+                <li><a class="dropdown-item" href="laporan.html">Laporan Penyaluran Dana</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="events.html">Event</a></li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="tentangkami.html">Tentang Kami</a></li>
+          </ul>
+          <div>
+            <a href="login.html"><button class="btn btn-link text-dark text-decoration-none me-1">Masuk</button></a>
+            <a href="register.html"><button class="btn btn-primary">Daftar</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-lg d-flex justify-content-center align-items-center">
+    <div class="col-6 p-4 rounded-4 shadow-app mt-5 mb-3 bg-white">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="m-0">Masuk</h2>
+        <img class="img-fluid img-footer" src="../assets/logos/Logo_Jabar_Sejahtera.png" alt="Logo Jabar Sejahtera" />
+      </div>
+      <form method="GET" action="" autocomplete="on" onsubmit="event.preventDefault();login()">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" id="email" aria-describedby="emailhelp"
+            placeholder="johndoe@gmail.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" id="password" placeholder="**********" required>
+        </div>
+        <div class="d-grid gap-2">
+          <button id="loginButton" class="btn btn-primary btn-lg mt-2" type="submit">Masuk</button>
+        </div>
+      </form>
+      <div class="text-end mt-3">
+        <p class=" my-1 text-end">Belum Punya Akun? <a href="register.html">Daftar</a></p>
+        <a href="lupapassword.html">Lupa Password?</a>
+      </div>
+    </div>
+  </main>
+  <footer class="shadow-sm mt-4 py-3 bg-white">
+    <div class="container-lg">
+      <div class="row justify-content-between align-items-start gap-5">
+        <div class="col-3">
+          <img class="img-fluid mb-3 img-footer" src="../assets/logos/Logo_Jabar_Sejahtera.png"
+            alt="Logo Jabar Sejahtera" />
+          <p>Jabarsejahtera.org adalah website untuk berzakat dan menggalang dana secara online terpopuler di Indonesia.
+          </p>
+        </div>
+        <div class="col">
+          <h6>Hubungi Kami</h6>
+          <div class="d-flex flex-row align-items-center gap-2">
+            <i class="bi bi-whatsapp"></i>
+            <address class="m-0">08986866875</address>
+          </div>
+          <div class="d-flex flex-row align-items-center gap-2">
+            <i class="bi bi-instagram"></i>
+            <address class="m-0">@JabarSejahtera</address>
+          </div>
+          <div class="d-flex flex-row align-items-center gap-2">
+            <i class="bi bi-envelope-fill"></i>
+            <address class="m-0">jabarsejahtera@gmail.com</address>
+          </div>
+          <div class="d-flex flex-row gap-2">
+            <i class="bi bi-geo-alt-fill"></i>
+            <address class="m-0">
+              Jl. Gelap Nyawang No.4, Lb. Siliwangi, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132
+            </address>
+          </div>
+        </div>
+        <div class="col-3">
+          <img class="img-fluid" src="../Location.png" alt="Map Jabar Sejahtera">
+        </div>
+      </div>
+      <hr class="m-0">
+      <div class="d-flex justify-content-between align-items-center mt-2">
+        <small class="text-msecondary">Jabar Digital Services</small>
+        <small class="text-msecondary">Copyright &copy; 2022. All Right Reserved</small>
+      </div>
+    </div>
+  </footer>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="./js_app.js"></script>
+  <script>
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+
+    const loginButton = document.getElementById('loginButton');
+
+    loginButton.addEventListener('click', login());
+
+    function login() {
+      const loginData = {
+        email: email.value,
+        password: password.value,
+      };
+
+      const users = JSON.parse(localStorage.getItem("users"))
+      if (users) {
+        const user = users.find((user) => user.email == loginData.email)
+
+        if (user.email == loginData.email && user.password == loginData.password) {
+          alert("MATI LO KONTOL")
+          user.role == "admin" ? window.location.href = 'admin.html' : window.location.href = 'user.html'
+        } else {
+          alert("Email atau password salah")
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
