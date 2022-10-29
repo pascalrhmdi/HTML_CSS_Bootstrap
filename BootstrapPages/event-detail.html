@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Event - Jabar Sejahtera</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- Bootstrap Icon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.12.1/datatables.min.css" />
+  <!-- My Own Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top shadow-sm bg-white">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/logos/Logo_Jabar_Sejahtera.png" alt="Logo Jabar Sejahtera" height="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link active" href="index.html">Beranda</a></li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="event-detail.html">Donasi</a></li>
+            <li class="nav-item dropdown mt-2 mb-lg-0">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Layanan
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="hitungzakat.html">Hitung Zakat</a></li>
+                <li><a class="dropdown-item" href="laporan.html">Laporan Penyaluran Dana</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="events.html">Event</a></li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="tentangkami.html">Tentang Kami</a></li>
+          </ul>
+          <div>
+            <a href="login.html"><button class="btn btn-link text-dark text-decoration-none me-1">Masuk</button></a>
+            <a href="register.html"><button class="btn btn-primary">Daftar</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="text-center p-4">Daftar Event Jabar Sejahtera</h1>
+      <section class="row mt-4 mb-5 mx-0" id="listEvent">
+        <div class="row justify-content-end g-2">
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary">
+              <i class="bi bi-funnel-fill"></i>
+              Filter
+            </button>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown open">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="sortId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="bi bi-sort-down"></i>
+                Sort By
+              </button>
+              <div class="dropdown-menu" aria-labelledby="sortId">
+                <button class="dropdown-item">A-Z</button>
+                <button class="dropdown-item">Z-A</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto"><button type="button" class="btn btn-danger">Reset</button></div>
+        </div>
+        <div class="row g-2 py-1">
+          <div class="col-6 col-md-4 col-lg-3 ">
+            <div class="card">
+              <img class="card-img-top" src="../assets/images/giveDonation.png" alt="Event Image">
+              <div class="card-body">
+                <h5 class="card-title h6-plus ">Membantu Banjir Jakarta</h5>
+                <p class="card-text mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto voluptatibus assumenda earum aperiam consectetur.</p>
+                <div class="d-flex align-items-center  gap-col-1">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>Bandung</span>
+                </div>
+                <div class="d-flex align-items gap-col-1">
+                  <i class="bi bi-calendar-date-fill"></i>
+                  <span>Sabtu, 16 Desember 2022</span>
+                </div>
+                <a href="event-detail.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 ">
+            <div class="card">
+              <img class="card-img-top" src="../assets/images/giveDonation.png" alt="Event Image">
+              <div class="card-body">
+                <h5 class="card-title h6-plus ">Membantu Banjir Jakarta</h5>
+                <p class="card-text mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto voluptatibus assumenda earum aperiam consectetur.</p>
+                <div class="d-flex align-items-center  gap-col-1">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>Bandung</span>
+                </div>
+                <div class="d-flex align-items gap-col-1">
+                  <i class="bi bi-calendar-date-fill"></i>
+                  <span>Sabtu, 16 Desember 2022</span>
+                </div>
+                <a href="event-detail.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 ">
+            <div class="card">
+              <img class="card-img-top" src="../assets/images/giveDonation.png" alt="Event Image">
+              <div class="card-body">
+                <h5 class="card-title h6-plus ">Membantu Banjir Jakarta</h5>
+                <p class="card-text mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto voluptatibus assumenda earum aperiam consectetur.</p>
+                <div class="d-flex align-items-center  gap-col-1">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>Bandung</span>
+                </div>
+                <div class="d-flex align-items gap-col-1">
+                  <i class="bi bi-calendar-date-fill"></i>
+                  <span>Sabtu, 16 Desember 2022</span>
+                </div>
+                <a href="event-detail.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 ">
+            <div class="card">
+              <img class="card-img-top" src="../assets/images/giveDonation.png" alt="Event Image">
+              <div class="card-body">
+                <h5 class="card-title h6-plus ">Membantu Banjir Jakarta</h5>
+                <p class="card-text mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto voluptatibus assumenda earum aperiam consectetur.</p>
+                <div class="d-flex align-items-center  gap-col-1">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>Bandung</span>
+                </div>
+                <div class="d-flex align-items gap-col-1">
+                  <i class="bi bi-calendar-date-fill"></i>
+                  <span>Sabtu, 16 Desember 2022</span>
+                </div>
+                <a href="event-detail.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 ">
+            <div class="card">
+              <img class="card-img-top" src="../assets/images/giveDonation.png" alt="Event Image">
+              <div class="card-body">
+                <h5 class="card-title h6-plus ">Membantu Banjir Jakarta</h5>
+                <p class="card-text mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto voluptatibus assumenda earum aperiam consectetur.</p>
+                <div class="d-flex align-items-center  gap-col-1">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>Bandung</span>
+                </div>
+                <div class="d-flex align-items gap-col-1">
+                  <i class="bi bi-calendar-date-fill"></i>
+                  <span>Sabtu, 16 Desember 2022</span>
+                </div>
+                <a href="event-detail.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 ">
+            <div class="card">
+              <img class="card-img-top" src="../assets/images/giveDonation.png" alt="Event Image">
+              <div class="card-body">
+                <h5 class="card-title h6-plus ">Membantu Banjir Jakarta</h5>
+                <p class="card-text mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto voluptatibus assumenda earum aperiam consectetur.</p>
+                <div class="d-flex align-items-center  gap-col-1">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <span>Bandung</span>
+                </div>
+                <div class="d-flex align-items gap-col-1">
+                  <i class="bi bi-calendar-date-fill"></i>
+                  <span>Sabtu, 16 Desember 2022</span>
+                </div>
+                <a href="event-detail.html" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example" class="mt-3">
+          <ul class="pagination justify-content-center">
+            <li class="page-item "><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+  </main>
+
+  <footer class="shadow-apps mt-3 py-3 bg-white">
+    <div class="container-lg">
+      <div class="row justify-content-between align-items-start gap-5">
+        <div class="col-3">
+          <img class="img-fluid mb-3 img-footer" src="../assets/logos/Logo_Jabar_Sejahtera.png" alt="Logo Jabar Sejahtera" />
+          <p>Jabarsejahtera.org adalah website untuk berzakat dan menggalang dana secara online terpopuler di Indonesia.
+          </p>
+        </div>
+        <div class="col">
+          <h6>Hubungi Kami</h6>
+          <div class="d-flex flex-row align-items-center gap-2">
+            <i class="bi bi-whatsapp"></i>
+            <address class="m-0">08986866875</address>
+          </div>
+          <div class="d-flex flex-row align-items-center gap-2">
+            <i class="bi bi-instagram"></i>
+            <address class="m-0">@JabarSejahtera</address>
+          </div>
+          <div class="d-flex flex-row align-items-center gap-2">
+            <i class="bi bi-envelope-fill"></i>
+            <address class="m-0">jabarsejahtera@gmail.com</address>
+          </div>
+          <div class="d-flex flex-row gap-2">
+            <i class="bi bi-geo-alt-fill"></i>
+            <address class="m-0">
+              Jl. Gelap Nyawang No.4, Lb. Siliwangi, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132
+            </address>
+          </div>
+        </div>
+        <div class="col-3">
+          <img class="img-fluid" src="../Location.png" alt="Map Jabar Sejahtera">
+        </div>
+      </div>
+      <hr class="m-0">
+      <div class="d-flex justify-content-between align-items-center mt-2">
+        <small class="text-msecondary">Jabar Digital Services</small>
+        <small class="text-msecondary">Copyright &copy; 2022. All Right Reserved</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.12.1/datatables.min.js"></script>
+
+  <script src="./js_app.js"></script>
+</body>
+
+</html>
