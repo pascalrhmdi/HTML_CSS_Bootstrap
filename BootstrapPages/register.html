@@ -51,7 +51,7 @@
   </header>
 
   <main class="container-lg d-flex justify-content-center align-items-center">
-    <div class="col-6 p-4 rounded-4 shadow-app mt-4 bg-white">
+    <div class="col-10 col-md-8 col-lg-6 p-4 rounded-4 shadow-app mt-4 bg-white">
       <div class="d-flex justify-content-between align-items-center mb-3">
         <h2 class="m-0">Daftar</h2>
         <img class="img-fluid img-footer" src="../assets/logos/Logo_Jabar_Sejahtera.png" alt="Logo Jabar Sejahtera" />
@@ -77,10 +77,9 @@
           <label for="phonenumber" class="form-label">No.HP<span class="text-danger">*</span></label>
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="nominal">Rp.</span>
-            <input type="text" class="form-control" name="nominal" id="nominal" placeholder="Rp." aria-label="nominal" aria-describedby="nominal">
+            <input type="tel"
+              class="form-control" name="phonenumber" id="phonenumber" aria-describedby="nohphelp" placeholder="8986866875"  aria-label="nominal" aria-describedby="nominal" required>
           </div>
-          <input type="tel"
-            class="form-control" name="phonenumber" id="phonenumber" aria-describedby="nohphelp" placeholder="8986866875" required>
           <!-- <small id="nohphelp" class="form-text text-muted">Nomor WhatsApp.</small> -->
         </div>
         <!-- Password -->
