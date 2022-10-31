@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Event - Jabar Sejahtera</title>
+  <title>Edit Akun - Jabar Sejahtera</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +19,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md fixed-top shadow-sm bg-white">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-white">
       <div class="container-xl">
         <a class="navbar-brand" href="#">
           <img src="../assets/logos/Logo_Jabar_Sejahtera.png" alt="Logo Jabar Sejahtera" height="50" />
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
             <li class="nav-item mt-2 mb-lg-0"><a class="nav-link active" href="index.html">Beranda</a></li>
-            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="event-detail.html">Donasi</a></li>
+            <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="donasi.html">Donasi</a></li>
             <li class="nav-item dropdown mt-2 mb-lg-0">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Layanan
@@ -43,9 +43,22 @@
             <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="events.html">Event</a></li>
             <li class="nav-item mt-2 mb-lg-0"><a class="nav-link" href="tentangkami.html">Tentang Kami</a></li>
           </ul>
-          <div>
-            <a href="login.html"><button class="btn btn-link text-dark text-decoration-none me-1">Masuk</button></a>
-            <a href="register.html"><button class="btn btn-primary">Daftar</button></a>
+          <div class="d-flex align-items-center">
+            <i class="bi bi-person-circle fs-3"></i>
+            <div class="dropdown open">
+              <button class="btn  dropdown-toggle" type="button" id="triggerAcccount" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Muhammad Pascal Rahmadi
+              </button>
+              <div class="dropdown-menu" aria-labelledby="triggerAcccount">
+                <a class="dropdown-item" href="editakun.html">Edit Akun</a>
+                <a class="dropdown-item" href="riwayat-donasi.html">Riwayat Donasi</a>
+                <hr>
+                <button class="dropdown-item text-danger" href="riwayat-donasi.html">
+                  <i class="bi bi-door-open-fill text-danger me-2"></i>
+                  Keluar
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +93,11 @@
                   <label for="no_hp" class="form-label">No. HP</label>
                   <input type="tel" class="form-control" name="no_hp" id="no_hp" value="08986866875">
                 </div>
-                <div class="d-flex justify-content-end"><button type="submit" class="btn btn-primary px-5 py-2 h6-plus">Edit</button></div>
+                <div class="row justify-content-end">
+                  <div class="d-grid col-md-6 col-lg-4">
+                    <button type="submit" class="btn btn-primary shadow-sm px-5 py-2 h6-plus">Edit</button>
+                  </div>
+                </div>
               </form>
               </p>
             </div>
@@ -104,8 +121,12 @@
                   <label for="confirm_new_password" class="form-label">Konfirmasi Password Baru</label>
                   <input type="password" class="form-control" name="confirm_new_password" id="confirm_new_password" placeholder="***********">
                 </div>
-                .
-                <button type="submit" class="btn btn-primary">Ganti</button>
+
+                <div class="row justify-content-end">
+                  <div class="d-grid col-md-6 col-lg-4">
+                    <button type="submit" class="btn btn-primary shadow-sm px-5 py-2 h6-plus">Ganti</button>
+                  </div>
+                </div>
               </form>
               </p>
             </div>
